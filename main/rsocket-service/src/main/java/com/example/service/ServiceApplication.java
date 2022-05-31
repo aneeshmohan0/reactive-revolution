@@ -39,6 +39,7 @@ import java.security.Principal;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
@@ -135,7 +136,6 @@ class GreetingController {
                 .map(GreetingRequest::new)
                 .flatMapMany(greetingService::greet);
     }
-
 }
 
 @Service
