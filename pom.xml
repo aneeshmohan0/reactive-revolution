@@ -7,7 +7,9 @@
   <artifactId>root</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>client</module>
-    <module>service</module>
+    <module>archived/client-gateway</module>
+    <module>archived/service-gateway</module>
+    <module>main/rsocket-edge</module>
+    <module>main/rsocket-service</module>
   </modules>
 </project>
